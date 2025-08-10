@@ -1,7 +1,12 @@
-import {NextPage} from "next";
+import {Metadata, NextPage} from "next";
 import {PropsWithChildren} from "react";
 import {BaseLayout} from "../../components/BaseLayout/BaseLayout";
 
+
+export const metadata:Metadata={
+    title:"Characters",
+    description:"App-router",
+}
 
 const Layout: NextPage<PropsWithChildren> = ({children}) => {
 return <BaseLayout>{children}</BaseLayout>;

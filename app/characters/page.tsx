@@ -11,7 +11,6 @@ async function getCharacters():Promise<ResponseType<CharacterType>>{
 
 export default async function Characters ()  {
 const {results}= await getCharacters()
-
     const charactersList = results.map(character => (
         <CharacterCard key={character.id} character={character}/>
     ))
