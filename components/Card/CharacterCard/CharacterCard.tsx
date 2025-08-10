@@ -23,7 +23,7 @@ export const CharacterCard = (props: PropsType) => {
     return (
         <Card name={name}>
             <Status status={status} src={statusImages[status]}/>
-            <Link href={`/app/characters/${id}`}>
+            <Link href={`/characters/${id}`}>
                 <Image src={image}
                        alt={name}
                        width={300}
